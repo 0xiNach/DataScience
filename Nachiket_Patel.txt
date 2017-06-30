@@ -1,0 +1,46 @@
+Question#1:
+
+>mkdir test
+>git init ##initializing repo
+>git status
+>git commit -m "git is good" ##commiting changes
+
+
+
+Question#2:
+
+>mkdir subset
+>touch b.txt
+>cd ..
+>touch a1.txt
+>touch a2.txt
+>git add .
+>git status
+>git commit -m "uploading dir"
+>git log --oneline  ##get commit history
+
+
+
+
+Question#3:
+
+>nano a.txt
+ ##write "Github is awesome"
+>git add a.txt
+>git diff --staged  ##difference between the old version we committed and new one in the staging area
+>git commit -m "github is awesome"
+
+
+
+Question#4:
+
+
+>touch a1.txt
+ ##add anything 
+>git add a1.txt
+>git reset HEAD 
+>git commit -am "undoing commited"
+>git revert HEAD ##undoing commited
+>git log --oneline
+
+
